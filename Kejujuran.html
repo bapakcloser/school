@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Jenis Website" content="Gallery Closer">
+  <meta name="Author" content="Dio Satrio Imanuel">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css">
+  <title>Kejujuran</title>
+  <link rel="icon" href="Aset/Closer.Jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+ 
+ .content {
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ }
+
+ .content .textBox {
+  position: relative;
+  max-width: 600px;
+  
+ }
+
+ .content .textBox h2 {
+  color: rgb(71,190,217);
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+ }
+
+.content .textBox h2 span {
+  color: rgb(71,190,217); /* Warna Hijau */
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: #080808;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: rgb(71,190,217);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .imgBox img {
+  max-width: 340px;
+}
+
+.thumb {
+  position: absolute;
+  left: 40%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  margin: 0 45px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-25px);
+}
+.thumb li {
+  max-width: 60px;
+}
+.circle {
+  position: absolute;
+  top: 90;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #555;
+ clip-path: circle(900px at right 900px);
+}
+
+/* Navbar ya dekk */ 
+
+html {
+			scroll-behavior: smooth;
+		}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.4rem 7%;
+	background-color: rgba(1,1,1,0.8);
+	border-bottom: 1px solid linear-gradient(90deg, rgba(12,16,191,1) 0%, rgba(14,79,214,1) 62%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navbar .logo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+	color: rgb(71,190,217);
+}
+
+.navbar .navbar-nav a{
+	display: inline-block;
+	color: #fff;
+    text-decoration: none;
+	font-size: 1rem;
+	margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+	color: rgb(71,190,217);
+}
+
+.navbar .navbar-nav a::after {
+	content: '';
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid rgb(71,190,217);
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+	transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+	color: #fff;
+	margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+	color: rgb(71,190,217);
+}
+/* Navbar selesai ya dekk */
+
+
+/* Footer */
+footer {
+	background-color: rgb(71,190,217);
+	text-align: center;
+	padding: 1rem 0 3rem;
+}
+
+footer .social {
+	padding: 1rem 0;
+}
+
+footer .social a{
+	color: #fff;
+	margin: 1rem;
+
+}
+
+
+footer .links {
+	margin-bottom: 1.4rem;
+}
+
+footer .links a:hover {
+	color: #080808;
+}
+footer .links a{
+	color: #fff;
+	padding: 0.7rem 1rem;
+  text-decoration: none;
+}
+
+
+footer .credit {
+	font-size: 0.8rem;
+	
+}
+
+footer .credit a{
+color: blue;
+font-weight: 700;
+text-decoration: none;
+}
+
+footer .credit a:hover {
+  color: royalblue;
+}
+
+content::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	background: linear-gradient(0deg, rgba(1,1,3,1) 8%, rgba(255,255,255,0) 50%);
+}
+
+  </style>
+
+
+</head>
+<body>
+  
+<section>
+  <div class="circle"></div>
+<!--Navbar start-->
+
+<div class="navbar">
+	<a href="#" class="logo"><i><span>Closer</span></i></a>
+	<div class="navbar-nav">
+		<a href="Closer.html">Home</a>
+		<a href="#">Pentingnya Karakter 4K</a>
+		<a href="#">Gallery Closer</a>
+	</div>
+
+	<div class="navbar-extra">
+		<a href="#" id="search"><ion-icon name="search"></ion-icon></a>
+		<a href="#" id="information"><ion-icon name="information-circle-outline"></ion-icon></a>
+		<a href="#" id="hamburger-menu"><ion-icon name="menu"></ion-icon></a>
+        
+		</a>
+	</div>
+</div>
+<!--Navbar end-->
+  <div class="content">
+    <div class="textBox">
+      <h2>  <span>Kejujuran</span></h2>
+    <p>  SMP PGRI 2 Ciledug terus berupaya menghasilkan siswa/i yang berkarakter. salah satunya siswa/i tersebut, dimana mereka berhasil menerapkan karakter 4K di lingkungan sekolah <br>
+        dan  dilingkungan luar sekolah, salah satu dari mereka menerapkan Kedisiplinan
+    </p>
+    <a href="https://smppgri2ciledug.sch.id/penghargaan-bintang-kejujuran-dan-kedisiplinan-4-k/"> Pelajari Lebih Lanjut</a>
+    </div>
+    <div class="imgBox" data-tilt>
+        <img decoding="async" src="https://smppgri2ciledug.sch.id/wp-content/themes/sparkle-fse/images/blue.svg" alt="" style="border-radius:0px;height:350px;">
+    </div>
+  </div>
+  <ul class="thumb">
+    <li><a href="Gallery Closer.html"><img decoding="async" src="https://smppgri2ciledug.sch.id/wp-content/themes/sparkle-fse/images/green.svg" alt="" style="border-radius:0px"></a></li>
+    <li><a href="Kedisiplinan.html"><img decoding="async" src="https://smppgri2ciledug.sch.id/wp-content/themes/sparkle-fse/images/red.svg" alt="" style="border-radius:0px"></a></li>
+    <li><a href="#"><img decoding="async" src="https://smppgri2ciledug.sch.id/wp-content/themes/sparkle-fse/images/blue.svg" alt="" style="border-radius:0px"></a></li>
+    <li><a href="Kesantunan.html"><img decoding="async" src="https://smppgri2ciledug.sch.id/wp-content/themes/sparkle-fse/images/yellow.svg" alt="" style="border-radius:0px"></a></li>
+</ul>
+</section>
+
+<!--Footer start-->
+<footer>
+	<div class="social">
+		<a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+	</div>
+
+
+   
+	<div class="links">
+		<a href="#home">Home</a>
+        <a href="#about">Pentingnya Karakter 4K</a>
+		<a href="#menu">Gallery Closer</a>
+
+	</div>
+
+	<div class="credit">
+		<p>Created by <a href="#">Dio Satrio Imanuel.</a>| &copy; 2023.
+		</p>
+	</div>
+</footer>
+<!--Footer end-->
+
+
+<script type="text/javascript" src="vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector('.imgBox'), {
+		max: 80,
+		speed: 400
+	});
+    </script>
+
+    <!--My Icons-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
