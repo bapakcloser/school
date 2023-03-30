@@ -5,14 +5,15 @@
     <meta http-equiv="Website Type" content="Class Of 7.4">
     <meta name="Author" content="Dio Satrio Imanuel">
     <title>Closer Official Website</title>
-	<link rel="icon" href="Aset/Closer.Jpg">
+	<link rel="icon" href="Gambar/Closer.Jpg">
    <!--Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap">
 	
 	<style type="text/css">
-
+   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+        @import url('https://fonts.googleapis.con/css2?family=Rancho&display=swap');
 		:root {
 			--primary :rgba(14,79,214,1);
 			--bg: #010101;
@@ -29,7 +30,7 @@
 
 		body {
 			font-family: 'Poppins', sans-serif;
-			background: var(--bg);
+			background: #fff;
 			color: #fff;
 			
 
@@ -103,7 +104,7 @@
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background: url(Aset/3378033.jpg);
+	background-image: url(Gambar/3378033.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -303,8 +304,8 @@ flex:  1 1 45rem;
 .about .row .content h3 {
 	font-size: 1.6rem;
 }
-/* Mobile Phone */
-@media (max-width:200px) {
+/* Mobile-Phone */
+@media (max-width:450px) {
 	html {
 		font-size: 55%;
 	}
@@ -438,7 +439,6 @@ footer {
 	background-color: var(--primary);
 	text-align: center;
 	padding: 1rem 0 3rem;
-	margin-top: 3rem;
 }
 
 footer .social {
@@ -537,6 +537,90 @@ font-weight: 700;
 	cursor: pointer;
 }
 
+
+section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #094b65, transparent);
+            z-index: 10;
+        }
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+	background: linear-gradient(0deg, rgba(1,1,3,1) 8%, rgba(255,255,255,0) 50%);
+			z-index: 5;
+}
+
+        section #text {
+            position: absolute;
+            color: #094b65;
+            font-size: 10vw;
+            text-align: center;
+            line-height: 0.55em;
+            font-family: 'Rancho', cursive;
+            transform: translateY(-50%);
+        }
+
+
+
+        section #text span {
+            font-size: 0.20em;
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        #btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            background: #fff;
+            color: #094b65;
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 40px;
+            transform: translateY(100px);
+			z-index: 6;
+        }
+
+        .sec {
+            position: relative;
+            padding: 10px;
+            background: #094b65;
+        }
+
+        .sec h2 {
+            font-size: 3.5em;
+            color: #094b65;
+            margin-bottom: 10px;
+        }
+
+        .sec p {
+            font-size: 1em;
+            color: #094b65;
+			
+        }
 	</style>
 </head>
 <body>
@@ -547,11 +631,13 @@ font-weight: 700;
 		<a href="#">Home</a>
 		<a href="#about">Gallery</a>
 		<a href="#contact">Kenangan Kita</a>
+		<a href="Contact Us.html">Kontak</a>
 	</div>
 
 	<div class="navbar-extra">
 		<a href="#" id="search"><ion-icon name="search"></ion-icon></a>
-		<a href="#" id="information"><ion-icon name="information-circle-outline"></ion-icon></a>
+		<a href="#" id="information"><ion-icon name="information-circle-outline" onclick="KataKataBanned()"></ion-icon></a>
+		<p id="msg"></p>
 		<a href="#" id="hamburger-menu"><ion-icon name="menu"></ion-icon></a>
         
 		</a>
@@ -561,31 +647,52 @@ font-weight: 700;
 <!--Hero Section Start-->
 <section class="hero" id="home">
 	<main class="content">
-		<h1>Class Of <span>7.4</span></h1>
-		<p style="color:  rgb(86, 183, 25);">Tempatnya Anak Anak Asik</p>
-	<a href="#about" class="cta" style="cursor: pointer;">Jelajahi</a>
+		<h1>Class Of <span>7.4</span></h1>	
+	<a href="#about" class="cta" style="cursor: pointer;margin-left: 100px;">Jelajahi</a>
 	</main>
 </section>
 <!--Hero Section end-->
 
 <!---About Section start-->
-<section id="about" class="about">
-    <div class="circle"></div>
-    <div class="content">
-      <div class="textBox">
-        <h3>Bhinneka  <br>Tunggal <span>Ika !</span></h3>
-      <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur modi error mollitia incidunt vel maiores facere amet natus. Deleniti, sed assumenda consequuntur harum vitae esse nemo eveniet inventore veniam.
-      </p>
-      <a href="Gallery Closer.html"> Learn More</a>
-      </div>
-      
-    </section>
+<section class="about" id="about">
+    <h2 id="text"><span>Ingin Melihat Gallery </span><br>Closer ?</h2>
+    <img src="Gambar/bird1.png" alt="bird1">
+    <img src="Gambar/bird2.png" alt="bird2">
+    <img src="Gambar/forest.png" alt="forest">
+    <a href="Animated Text.html" id="btn">Klik</a>
+    <img src="Gambar/rocks.png" alt="rocks">
+    <img src="Gambar/water.png" alt="water">
+</section>
+<div class="sec">
+    <h2>Parallax Scrolling Effects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat sit asperiores fuga aut nostrum illum. Doloremque consequatur cum sapiente! Omnis consequuntur nam quidem officiis quos nemo architecto, ipsa fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla quae accusamus corrupti adipisci quibusdam iure ex explicabo cumque ipsa. Suscipit necessitatibus explicabo porro. Rerum corporis expedita eaque deleniti voluptates.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ipsa, repudiandae, repellat eius numquam cum iste praesentium eligendi modi atque? Doloribus, ex facilis ratione quibusdam ipsam voluptatem consequatur amet!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, nobis autem! Tenetur odit quia perferendis expedita praesentium, possimus facilis recusandae a, rem voluptatem alias. Voluptas, rerum. Accusamus dolore amet porro.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit itaque aspernatur dolores debitis ad est, at molestiae consequuntur. Assumenda rem adipisci quia facilis ullam odio eligendi eum et cupiditate!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eveniet fugit quas nihil, ab doloremque vel laborum dicta ex saepe officiis quis eius facere fuga nobis, inventore totam rerum et.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro est earum enim velit repellat fugit quam dicta officia deserunt voluptas assumenda consectetur asperiores eius repellendus impedit molestias ipsam corporis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime, quaerat facere illo reiciendis ab illum facilis recusandae? Voluptatum iste soluta impedit fugiat in saepe, minima ducimus unde laboriosam sit!
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione minus, quasi reprehenderit ad necessitatibus adipisci excepturi magni, quod sint enim natus corporis. Nam molestiae eaque delectus reprehenderit consectetur iure.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut molestiae itaque vel cumque, architecto velit animi quia accusamus, similique officia distinctio quisquam rem deserunt sunt numquam ipsa. Libero, atque!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus provident fugiat officiis excepturi cupiditate quos suscipit, error saepe vel veritatis a facilis modi, est harum sequi minima molestiae atque quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ex fugiat magni voluptatibus aperiam officiis culpa quo, error vitae tempore dolor molestiae laudantium eos distinctio perspiciatis, maxime quasi sit.
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto perferendis officia ad corporis quia quis magni, eum sunt odit esse provident veniam nam error autem laudantium, ducimus debitis expedita!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dicta natus dolor quos ipsam illo? Temporibus consequatur reiciendis quam, ad illum fugit corrupti pariatur voluptatibus placeat nulla. Deleniti, quae mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nisi. Totam sed inventore est. A similique quam cumque dignissimos exercitationem distinctio enim eos. Sed officia ducimus, officiis amet quasi fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat nobis, recusandae quibusdam illum molestiae voluptatibus itaque nesciunt quos eius voluptates doloremque velit at aut deserunt dignissimos odio voluptate repudiandae.
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in magnam esse perspiciatis doloribus earum adipisci ea, velit ut sapiente at! Iure quidem eligendi, velit nostrum a exercitationem error incidunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quo eveniet tempore, repudiandae ea aut odio qui ipsum. Deleniti non explicabo soluta animi odio dolore sunt laboriosam fugit perspiciatis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis sequi iure sapiente natus praesentium possimus ipsam quae cumque odit amet fugit debitis unde atque quas soluta, laborum consequatur culpa dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laborum excepturi vel deserunt sapiente aliquid laudantium quas odio quos totam magni voluptate consequuntur tempore officia ut repellat cupiditate repellendus pariatur.
+
+    </p>
+</div>
 <!---About Section end-->
 <!--Contact Section Start-->
 <section id="contact" class="contact" style="margin-top: 300px;">
-	<h2><span>Kenangan </span>  Kita</h2>
-	<p style="text-align: center;">Comming Soon !
-	</p>
+	<h2  style="color: blue;text-align: center;margin-left: 5px;"><span  style="color: #094b65;">Kenangan </span>  Kita</h2>
 </section>
 <!--Contact Section end-->
 
@@ -604,6 +711,7 @@ font-weight: 700;
 		<a href="#home">Home</a>
         <a href="#about">Gallery</a>
 		<a href="#menu">Kenangan Kita</a>
+		<a href="Contact Us.html">Kontak</a>
 
 	</div>
 
@@ -628,7 +736,55 @@ font-weight: 700;
 		speed: 400
 	});
     </script>
+<script type="text/javascript">
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
 
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 400 + value * -0.5 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+</script>
+<script type="text/javascript">
+	  function KataKataBanned(){
+			var name = prompt("Butuh Bantuan Apa Kidz ?");
+    
+			if (name == "Gajadi Bang" || name == "Gajadi" 
+			|| name == "Goblok" || name == "Paansi Lu" || name == "Websitenya Jelek"
+			|| name == "Anjing" || name == "Cok" || name == "Gjadi"
+			|| name == "Bokep" || name == "Apaansi" || name == "Kok website closer gini dah"
+			|| name == "Memek" || name == "Kontol" || name == "kntl"
+			|| name == "Yakali" || name == "pemai" || name == "Gajadi"
+			|| name == "Maaf" || name == "artinya apa bang messi ?" || name == "test"
+			|| name == "Codingan burik" || name == "kamu nanya ?" || name == "bang"
+			|| name == "Ez" || name == "terserah lo ajh" || name == "woi"
+			|| name == "Apa ya" || name == "terserah " || name == "Woi dio"
+			|| name == "Gatau" || name == "gtw" || name == "Yo Pr apaan yo ?" 
+			|| name == "Mantannya Adel"){
+				document.getElementById("msg").innerHTML = "Asu! Jangan Ngerjain Dongg!";
+			}
+			
+			else
+			{
+				document.getElementById("msg").innerHTML = "Lu Butuh : " + name;
+			}
+		}
+ </script>
     <!--Selesai !!!-->
 </body>
 </html>

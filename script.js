@@ -21,3 +21,6 @@ document.addEventListener('click', function(e){
 navbarNav.classList.remove('active');
 }
 });
+
+
+/* Hamburger Menu or Toggle class active done */

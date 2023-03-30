@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<link rel="icon" href="Gambar/Closer.Jpg">
+<head>
+<style type="text/css">
+    /* My Fonts */
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+        @import url('https://fonts.googleapis.con/css2?family=Rancho&display=swap');
+		/* Get Started */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+	background-image: url(Gambar/Monochrome.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    }
+    /* Get ended */
+
+/* Navbar start*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.4rem 7%;
+	background-color: rgba(1,1,1,0.8);
+	border-bottom: 1px solid linear-gradient(90deg, rgba(12,16,191,1) 0%, rgba(14,79,214,1) 62%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navbar .logo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+	color: rgba(14,79,214,1);
+}
+
+.navbar .navbar-nav a{
+	display: inline-block;
+	color: #fff;
+	font-size: 1rem;
+	margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+	color: rgba(14,79,214,1);
+}
+
+.navbar .navbar-nav a::after {
+	content: '';
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid rgba(14,79,214,1);
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+	transform: scaleX(0.5);
+}
+/* navbar ended */
+/* Hero Section */
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: url(Gambar/Blue\ Space.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	background: linear-gradient(0deg, rgb(0,46,126) 8%, rgba(255,255,255,0) 50%);
+}
+
+.hero .content {
+	padding: 1.4rem 7%;
+	max-width: 60rem;
+}
+
+.hero .content h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+	line-height: 1.2;
+}
+
+.hero .content h1 span {
+	color: rgba(14,79,214,1);
+}
+
+.hero .content p {
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	line-height: 1.4;
+	font-weight: 50;
+	text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+	mix-blend-mode: difference;
+	
+}
+
+.hero .content .cta {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background: rgba(14,79,214,1);
+    text-decoration: none;
+    border-radius: 0.5rem;
+	box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content .cta:hover {
+    background-color:  rgb(3, 142, 255);
+}
+
+    /* Gallery Images start */
+div.gallery {
+  border: 1px solid #ccc;
+  margin-top: -130px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+div.gallery img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 7px rgba(68,77,136, 0.2);
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 10px;
+  float: left;
+  width: 25%;
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Gallery images ended */
+
+
+/* textbox start */
+.text-box {
+     color: #fff;
+     margin-left: 18.5%;
+     margin-top: 10%;
+}
+.text-box h1 {
+    font-size: 100px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(Gambar/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:  back 20s linear infinite;
+}
+
+/* Keyframes start */
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* Keyframes end */
+/* textbox ended */
+
+
+/* Footer start */
+
+/* Footer */
+footer {
+	background-color: rgba(14,79,214,1);
+	text-align: center;
+	padding: 1rem 0 3rem;
+    margin-top: 100%;
+}
+
+footer .social {
+	padding: 1rem 0;
+}
+
+footer .social a{
+	color: #fff;
+	margin: 1rem;
+
+}
+
+.footer .social a:hover {
+	color: #010101;
+}
+
+
+footer .links {
+	margin-bottom: 1.4rem;
+}
+
+footer .links a:hover {
+	color: aqua;
+}
+footer .links a{
+	color: #fff;
+	padding: 0.7rem 1rem;
+    text-decoration: none;
+}
+
+
+footer .credit {
+	font-size: 0.8rem;
+	
+}
+
+footer .credit p{
+    color: aqua;
+}
+
+footer .credit a{
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+}
+
+footer .credit a:hover {
+    color: aqua;
+}
+/* footer end */
+
+</style>
+</head>
+<body>
+
+<!--Navbar Start-->
+	
+<div class="navbar">
+	<a href="#" class="logo"><i><span>Closer</span></i></a>
+	<div class="navbar-nav">
+		<a href="Closer.html">Home</a>
+		<a href="Foto Foto.html">Kembali Ke Halaman Menu Gallery</a>
+        <a href="#contact">Profil Developer Web</a>
+		<a href="Contact Us.html">Kontak</a>
+	</div>
+</div>
+<!--Navbar ends-->
+
+
+<!--Hero Section Start-->
+<section class="hero" id="home">
+	<main class="content">
+		<h1>Class Of <span>7.4</span></h1>	
+	<a href="#about" class="cta" style="cursor: pointer;margin-left: 100px;">Jelajahi</a>
+	</main>
+</section>
+<!--Hero Section end-->
+
+
+
+
+<!--Gallery Images start-->
+<div class="text-box">
+    <h1>GALLERY CLOSER</h1>
+</div>
+<div class="responsive" id="about">
+  <div class="gallery">
+    <a target="_blank" href="Gambar/Closer [Palang Pintu].jpeg">
+      <img src="Gambar/Closer [Palang Pintu].jpeg" alt="Closer Juara 1" width="600" height="400">
+    </a>
+    <div class="desc">Projek P5</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Gambar/Closer Juara Bertutur Per Jenjang.jfif">
+      <img src="Gambar/Closer Juara Bertutur Per Jenjang.jfif" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Juara Nari</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Gambar/Ulang Tahun Bu Shella.jfif">
+      <img src="Gambar/Ulang Tahun Bu Shella.jfif" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Ulang Tahun Bu Shella</div>
+  </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Gambar/Juara Cerdas Cermat Numerasi.jfif">
+        <img src="Gambar/Juara Cerdas Cermat Numerasi.jfif" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Juara Cerdas Cermat Numerasi</div>
+    </div>
+  </div>
+
+  <br>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Gambar/Study Tour Bandung.jfif">
+        <img src="Gambar/Study Tour Bandung.jfif" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Study Tour Bandung</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Gambar/Projek P55.jpg">
+        <img src="Gambar/Projek P55.jpg" alt="Northern Lights" width="600" height="300">
+      </a>
+      <div class="desc">Projek P5 Palang Pintu</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Gambar/Study Tour Bandung.jfif">
+        <img src="Gambar/Study Tour Bandung.jfif" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Study Tour Bandung</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Gambar/Study Tour Bandung.jfif">
+        <img src="Gambar/Study Tour Bandung.jfif" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Study Tour Bandung</div>
+    </div>
+  </div>
+<!--Galery Images ended-->
+
+<!--Footer start-->
+<footer>
+	<div class="social">
+		<a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+		<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+	</div>
+
+
+   
+	<div class="links">
+		<a href="#home">Home</a>
+        <a href="#about">Gallery</a>
+		<a href="#menu">Kenangan Kita</a>
+		<a href="Contact Us.html">Kontak</a>
+
+	</div>
+
+	<div class="credit">
+		<p>Created by <a href="#">Dio Satrio Imanuel.</a>| &copy; 2023.
+		</p>
+	</div>
+</footer>
+<!--Footer end-->
+
+<!--My Icons-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+<!--<div class="full-img" id="fullImgBox">
+    <img src="Gambar/img1.jpg" id="fullImg">
+    <span onclick="closeFullImg()"> X</span>
+</div>
+<div class="img-gallery">
+<img src="Gambar/img1.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img2.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img3.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img4.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img5.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img6.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img7.jpg" onclick="openFullImg(this.src)">
+<img src="Gambar/img8.jpg" onclick="openFullImg(this.src)">
+</div>-->
+<!--My Javascript Script-
+<script type="text/javascript">
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic)
+{
+fullImgBox.style.display = "flex";
+fullImg.src = pic;
+}
+function closeFullImg(this.src)
+{
+fullImgBox.style.display = "none";
+}
+
+</script>-->
