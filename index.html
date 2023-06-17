@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Website Type" content="Class Of 7.4">
+    <meta name="Author" content="Dio Satrio Imanuel">
+    <title>Closer Official Website</title>
+	<link rel="icon" href="Gambar/Closer.Jpg">
+   <!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap">
+	
+	<style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+        @import url('https://fonts.googleapis.con/css2?family=Rancho&display=swap');
+
+		/* Text box start */
+		.text-box {
+     color: #1648c6;
+     position: absolute;
+     top: 150px;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-size: 100px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(Gambar/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:  back 20s linear infinite;
+}
+
+#button {
+            text-decoration: none;
+            display: inline-block;
+			margin-top: -05px;
+			margin-left: 42%;
+            padding: 40px 60px;
+            background: #fff;
+            color: #094b65;
+            font-size: 1.5em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 40px;
+            transform: translateY(100px);
+			z-index: 6;
+			
+        }
+/* Keyframes start */
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* Keyframes end */
+		/* Text box end */
+		:root {
+			--primary :rgba(14,79,214,1);
+			--bg: #010101;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+			border: none;
+			text-decoration: none;
+		}
+
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: #fff;
+			color: #fff;
+			
+
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.4rem 7%;
+	background-color: rgba(1,1,1,0.8);
+	border-bottom: 1px solid linear-gradient(90deg, rgba(12,16,191,1) 0%, rgba(14,79,214,1) 62%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navbar .logo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.navbar .logo span {
+	color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+	display: inline-block;
+	color: #fff;
+	font-size: 1rem;
+	margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+	color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+	content: '';
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid var(--primary);
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+	transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+	color: #fff;
+	margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+	color: linear-gradient(90deg, rgba(12,16,191,1) 0%, rgba(14,79,214,1) 62%);
+}
+
+#hamburger-menu {
+	display: none;
+}
+/* Hero Section */
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: url(Gambar/3378033.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.hero::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	background: linear-gradient(0deg, rgba(1,1,3,1) 8%, rgba(255,255,255,0) 50%);
+}
+
+.hero .content {
+	padding: 1.4rem 7%;
+	max-width: 60rem;
+}
+
+.hero .content h1 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+	line-height: 1.2;
+}
+
+.hero .content h1 span {
+	color: var(--primary);
+}
+
+.hero .content p {
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	line-height: 1.4;
+	font-weight: 50;
+	text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+	mix-blend-mode: difference;
+	
+}
+
+.hero .content .cta {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background: var(--primary);
+    border-radius: 0.5rem;
+	box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content .cta:hover {
+    background-color:  rgb(3, 142, 255);
+}
+
+
+/* About Section */
+.about,
+.menu,
+.contact {
+	padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.contact h2{
+	text-align: center;
+	font-size: 2.6rem;
+	margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+	color: var(--primary);
+}
+
+.about .row {
+	display: flex;
+}
+
+
+
+.about .row .about-img {
+flex:  1 1 45rem;
+}
+
+.about .row .about-img img {
+	width: 100%;
+}
+
+.about .row .content {
+	flex:  1 1 35rem;
+	padding: 0 1rem;
+}
+
+.about .row .content h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.about .row .content p,
+.menu  .row  .content p,
+.contact .row .content{
+	
+	margin-bottom: 0.8rem;
+	font-size: 1.3rem;
+	font-weight: 100;
+    line-height: 1.6;
+
+
+}
+
+
+
+
+
+/* Media queries */
+
+/* Laptop */
+@media (max-width:1336px) {
+	html {
+		font-size: 75%;
+	}
+
+}
+/* Tablet */
+@media (max-width:768px) {
+	html {
+		font-size: 62.5%;
+	}
+
+	.contact .row {
+		flex-wrap: wrap;
+	}
+
+	.contact .row .map {
+		height: 30rem;
+	}
+
+	.contact .row form {
+		padding-top: 0;
+	}
+
+	#hamburger-menu {
+		display: inline-block;
+	}
+
+	.navbar .navbar-nav {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: #fff;
+		width: 30rem;
+		height: 100vh;
+		transition: 0.3s;
+	}
+
+	.navbar .navbar-nav.active {
+		right: 0;
+
+	}
+
+	.navbar .navbar-nav a{
+		color: var(--bg);
+		display: block;
+		margin: 1.5rem;
+		padding: 0.5rem;
+		font-size: 2rem;
+	}
+
+	.navbar .navbar-nav a::after {
+		transform-origin: 0 0;
+	}
+
+	.navbar .navbar-nav a:hover::after {
+		transform:scaleX(0.2)
+
+}
+
+.about .row {
+	flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+	height: 24rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+.about .row .content {
+	padding: 0;
+}
+
+.about .row .content h3 {
+	font-size: 1.6rem;
+}
+/* Mobile-Phone */
+@media (max-width:450px) {
+	html {
+		font-size: 55%;
+	}
+
+	
+	.contact .row {
+		flex-wrap: wrap;
+	}
+
+	.contact .row .map {
+		height: 30rem;
+	}
+
+	.contact .row form {
+		padding-top: 0;
+	}
+
+	#hamburger-menu {
+		display: inline-block;
+	}
+
+	.navbar .navbar-nav {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: #fff;
+		width: 30rem;
+		height: 100vh;
+		transition: 0.3s;
+	}
+
+	.navbar .navbar-nav.active {
+		right: 0;
+
+	}
+
+	.navbar .navbar-nav a{
+		color: var(--bg);
+		display: block;
+		margin: 1.5rem;
+		padding: 0.5rem;
+		font-size: 2rem;
+	}
+
+	.navbar .navbar-nav a::after {
+		transform-origin: 0 0;
+	}
+
+	.navbar .navbar-nav a:hover::after {
+		transform:scaleX(0.2)
+
+}
+
+.about .row {
+	flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+	height: 24rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+.about .row .content {
+	padding: 0;
+}
+
+.about .row .content h3 {
+	font-size: 1.6rem;
+}
+} }
+ /* Menu Section */
+.menu{
+	background: #fff;
+}
+	</style>
+
+	<style>
+
+
+ .content .textBox {
+  position: relative;
+  max-width: 600px;
+ }
+
+ .content .textBox h3 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+ }
+
+ 
+
+.content .textBox h3 span {
+  color: rgba(14,79,214,1);
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: #fff;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: rgba(14,79,214,1);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .textBox a:hover {
+    background-color:  rgb(3, 142, 255);
+}
+
+.circle {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14,79,214,1);
+ clip-path: circle(900px at right 900px);
+ z-index: -1;
+}
+
+.navbar .navbar-extra a:hover {
+	color: royalblue;
+	cursor: pointer;
+}
+
+
+section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #094b65, transparent);
+            z-index: 10;
+        }
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+	background: linear-gradient(0deg, rgba(1,1,3,1) 8%, rgba(255,255,255,0) 50%);
+			z-index: 5;
+}
+
+        section #text {
+            position: absolute;
+            color: #094b65;
+            font-size: 10vw;
+            text-align: center;
+            line-height: 0.55em;
+            font-family: 'Rancho', cursive;
+            transform: translateY(-50%);
+        }
+
+
+
+        section #text span {
+            font-size: 0.20em;
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        #btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            background: #fff;
+            color: #094b65;
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 40px;
+            transform: translateY(100px);
+			z-index: 6;
+        }
+
+        .sec {
+            position: relative;
+            padding: 10px;
+            background: #094b65;
+        }
+
+        .sec h2 {
+            font-size: 3.5em;
+            color: #094b65;
+            margin-bottom: 10px;
+        }
+
+        .sec p {
+            font-size: 1em;
+            color: #094b65;
+			
+        }
+
+		
+        /* info */
+        .info {
+            background: #094b65;
+			width: 4000rem;
+			height: 100%;
+        }
+
+        .info h3 {
+            color: #fff;
+        }
+
+        .info .infoBox div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .info .infoBox div span {
+            min-width: 40px;
+            height: 40px;
+            color: #fff;
+            background: #094b65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .info .infoBox div p {
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        .info .infoBox div a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .sci {
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .sci li {
+            list-style: none;
+            margin-right: 15px;
+        }
+
+        .sci li a{
+            color: #fff;
+            font-size: 2em;
+            color: #ccc;
+        }
+
+        .sci li a:hover {
+            color: #fff;
+        }
+
+.map {
+    padding: 0;
+	height: 320px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 991px)
+{
+ 
+    .map {
+       height: 320px;
+        padding: 0;
+    }
+}
+	</style>
+</head>
+<body>
+	
+<div class="navbar">
+	<a href="#" class="logo"><i><span>Closer</span></i></a>
+	<div class="navbar-nav">
+		<a href="#">Home</a>
+		<a href="#about">Gallery</a>
+		<a href="#contact">Lokasi</a>
+	</div>
+
+	<div class="navbar-extra">
+		<a href="#" id="search"><ion-icon name="search"></ion-icon></a>
+		<a href="#" id="hamburger-menu"><ion-icon name="menu"></ion-icon></a>
+        
+		</a>
+	</div>
+</div>
+
+<!--Hero Section Start-->
+<section class="hero" id="home">
+	<main class="content">
+		<h1>Class Of <span>7.4</span></h1>	
+	<a href="#about" class="cta" style="cursor: pointer;margin-left: 100px;">Jelajahi</a>
+	</main>
+</section>
+<!--Hero Section end-->
+
+<!---About Section start-->
+<section class="about" id="about">
+    <h2 id="text"><span>Ingin Melihat Gallery </span><br>Closer ?</h2>
+    <img src="Gambar/bird1.png" alt="bird1">
+    <img src="Gambar/bird2.png" alt="bird2">
+    <img src="Gambar/forest.png" alt="forest">
+    <a href="Animated Text.html" id="btn">Klik</a>
+    <img src="Gambar/rocks.png" alt="rocks">
+    <img src="Gambar/water.png" alt="water">
+</section>
+<div class="sec">
+    <h2>Parallax Scrolling Effects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat sit asperiores fuga aut nostrum illum. Doloremque consequatur cum sapiente! Omnis consequuntur nam quidem officiis quos nemo architecto, ipsa fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla quae accusamus corrupti adipisci quibusdam iure ex explicabo cumque ipsa. Suscipit necessitatibus explicabo porro. Rerum corporis expedita eaque deleniti voluptates.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ipsa, repudiandae, repellat eius numquam cum iste praesentium eligendi modi atque? Doloribus, ex facilis ratione quibusdam ipsam voluptatem consequatur amet!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, nobis autem! Tenetur odit quia perferendis expedita praesentium, possimus facilis recusandae a, rem voluptatem alias. Voluptas, rerum. Accusamus dolore amet porro.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit itaque aspernatur dolores debitis ad est, at molestiae consequuntur. Assumenda rem adipisci quia facilis ullam odio eligendi eum et cupiditate!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eveniet fugit quas nihil, ab doloremque vel laborum dicta ex saepe officiis quis eius facere fuga nobis, inventore totam rerum et.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro est earum enim velit repellat fugit quam dicta officia deserunt voluptas assumenda consectetur asperiores eius repellendus impedit molestias ipsam corporis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime, quaerat facere illo reiciendis ab illum facilis recusandae? Voluptatum iste soluta impedit fugiat in saepe, minima ducimus unde laboriosam sit!
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione minus, quasi reprehenderit ad necessitatibus adipisci excepturi magni, quod sint enim natus corporis. Nam molestiae eaque delectus reprehenderit consectetur iure.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut molestiae itaque vel cumque, architecto velit animi quia accusamus, similique officia distinctio quisquam rem deserunt sunt numquam ipsa. Libero, atque!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus provident fugiat officiis excepturi cupiditate quos suscipit, error saepe vel veritatis a facilis modi, est harum sequi minima molestiae atque quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis ex fugiat magni voluptatibus aperiam officiis culpa quo, error vitae tempore dolor molestiae laudantium eos distinctio perspiciatis, maxime quasi sit.
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto perferendis officia ad corporis quia quis magni, eum sunt odit esse provident veniam nam error autem laudantium, ducimus debitis expedita!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dicta natus dolor quos ipsam illo? Temporibus consequatur reiciendis quam, ad illum fugit corrupti pariatur voluptatibus placeat nulla. Deleniti, quae mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nisi. Totam sed inventore est. A similique quam cumque dignissimos exercitationem distinctio enim eos. Sed officia ducimus, officiis amet quasi fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat nobis, recusandae quibusdam illum molestiae voluptatibus itaque nesciunt quos eius voluptates doloremque velit at aut deserunt dignissimos odio voluptate repudiandae.
+        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in magnam esse perspiciatis doloribus earum adipisci ea, velit ut sapiente at! Iure quidem eligendi, velit nostrum a exercitationem error incidunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quo eveniet tempore, repudiandae ea aut odio qui ipsum. Deleniti non explicabo soluta animi odio dolore sunt laboriosam fugit perspiciatis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis sequi iure sapiente natus praesentium possimus ipsam quae cumque odit amet fugit debitis unde atque quas soluta, laborum consequatur culpa dolorem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laborum excepturi vel deserunt sapiente aliquid laudantium quas odio quos totam magni voluptate consequuntur tempore officia ut repellat cupiditate repellendus pariatur.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat sit asperiores fuga aut nostrum illum. Doloremque consequatur cum sapiente! Omnis consequuntur nam quidem officiis quos nemo architecto, ipsa fugit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla quae accusamus corrupti adipisci quibusdam iure ex explicabo cumque ipsa. Suscipit necessitatibus explicabo porro. Rerum corporis expedita eaque deleniti voluptates.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ipsa, repudiandae, repellat eius numquam cum iste praesentium eligendi modi atque? Doloribus, ex facilis ratione quibusdam ipsam voluptatem consequatur amet!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, nobis autem! Tenetur odit quia perferendis expedita praesentium, possimus facilis recusandae a, rem voluptatem alias. Voluptas, rerum. Accusamus dolore amet porro.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit itaque aspernatur dolores debitis ad est, at molestiae consequuntur. Assumenda rem adipisci quia facilis ullam odio eligendi eum et cupiditate!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eveniet fugit quas nihil, ab doloremque vel laborum dicta ex saepe officiis quis eius facere fuga nobis, inventore totam rerum et.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laborum excepturi vel deserunt sapiente aliquid laudantium quas odio quos totam magni voluptate consequuntur tempore officia ut repellat cupiditate repellendus pariatur.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat sit asperiores fuga aut nostrum illum. Doloremque consequatur cum sapiente! Omnis consequuntur nam quidem officiis quos nemo architecto, ipsa fugit.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla quae accusamus corrupti adipisci quibusdam iure ex explicabo cumque ipsa. Suscipit necessitatibus explicabo porro. Rerum corporis expedita eaque deleniti voluptates.
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ipsa, repudiandae, repellat eius numquam cum iste praesentium eligendi modi atque? Doloribus, ex facilis ratione quibusdam ipsam voluptatem consequatur amet!
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, nobis autem! Tenetur odit quia perferendis expedita praesentium, possimus facilis recusandae a, rem voluptatem alias. Voluptas, rerum. Accusamus dolore amet porro.
+				<br><br>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit itaque aspernatur dolores debitis ad est, at molestiae consequuntur. Assumenda rem adipisci quia facilis ullam odio eligendi eum et cupiditate!
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eveniet fugit quas nihil, ab doloremque vel laborum dicta ex saepe officiis quis eius facere fuga nobis, inventore totam rerum et.
+		   
+    </p>
+</div>
+<!---About Section end-->
+    <!--Info Box-->
+		<!--Map-->
+	<section id="contact" class="contact" style="margin-top: -800px;">
+	<div class="contact info" style="margin-top: -300px;">
+		<h3>Contact Info</h3>
+		<div class="infoBox">
+			<div>
+				<span><ion-icon name="location"></ion-icon></span>
+				<p>Jl. KH Moch Ilyas No.20, RT.003/RW.004, Sudimara Barat,<br> Kec. Ciledug, Kota Tangerang, Banten 15151</p>
+			</div>
+			<div>
+				<span><ion-icon name="logo-instagram"></ion-icon></span>
+			 <a href="https://instagram.com/closer_7.4?igshid=OGRjNzg3M2Y=">Closer</a>
+			</div>
+			<div>
+				<span><ion-icon name="logo-instagram"></ion-icon></span>
+				<a href="https://instagram.com/shellafatwan?igshid=OGRjNzg3M2Y=">Walikelas Closer 7.4</a>
+			</div>
+		   
+			<!--Social Media Links-->
+			<ul class="sci">
+				<li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+				<li><a href="https://instagram.com/closer_7.4?igshid=OGRjNzg3M2Y="><ion-icon name="logo-instagram"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+			</ul>
+		</div>
+
+		<div class="contact map" style="z-index: 9999;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.282250694166!2d106.70211831399526!3d-6.226468062711199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa1936021be1%3A0x380563c80795bea7!2sSchool%20SMP%20PGRI%202%20Ciledug%20Tangerang!5e0!3m2!1sen!2sid!4v1679922098856!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+		</div>
+	</div>
+</div>
+</div>
+	</section>
+
+
+
+
+<!--My Icons-->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--my Javascript-->
+<script src="script.js"></script>
+
+<script type="text/javascript" src="vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector('.imgBox'), {
+		max: 80,
+		speed: 400
+	});
+    </script>
+<script type="text/javascript">
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 400 + value * -0.5 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+</script>
+
+    <!--Selesai !!!-->
+</body>
+</html>
